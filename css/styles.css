@@ -38,6 +38,13 @@ aside {
   height: 4em;
 }
 
+.title-and-nav-container {
+  display: grid;
+}
+
+.title-container {
+
+}
 
 
 
