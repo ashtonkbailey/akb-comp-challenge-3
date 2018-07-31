@@ -17,3 +17,17 @@ aside {
   grid-column: 1;
   grid-row: span 2;
 }
+
+.table-and-links-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.job-description-table {
+  border: solid;
+  margin: 20px;
+}
+
+.links-column {
+  margin: 20px;
+}
