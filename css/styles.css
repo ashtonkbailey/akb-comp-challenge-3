@@ -99,6 +99,32 @@ tr {
   margin: 20px;
 }
 
+.facebook-post-btn {
+  background-color: #4F70BC;
+  border-radius: 5px;
+  color: #FFF;
+  width: 90%;
+}
+
+.twitter-post-btn {
+  background-color: #46A9E9;
+  border-radius: 5px;
+  color: #FFF;
+  margin: 10px 0;
+  width: 90%;
+}
+
+.linkedin-post-btn {
+  background-color: #337EB7;
+  border-radius: 5px;
+  color: #FFF;
+  width: 90%;
+}
+
+h2 {
+  color: #5B6677;
+}
+
 /*Search Bar*/
 
 .search-and-btns-container {
