@@ -104,7 +104,7 @@ i {
   background-color: #FFF;
   display: grid;
   grid-template-columns: 7fr repeat(4, 1fr);
-  padding: 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .title-container {
@@ -113,10 +113,16 @@ i {
 
 h1 {
   color: #717D93;
+  font-weight: 700;
+}
+
+.loc-p {
+  color: #ADB2BB;
+  font-size: .8em;
 }
 
 .loc-name {
-  color: #7D8BA4;
+  color: #ADB2BB;
   margin-right: 0;
 }
 
@@ -139,6 +145,11 @@ a {
   width: 30px;
 }
 
+.file-edits:hover {
+  background-color: #46A3F3;
+  color: #FFF;
+}
+
 .open-file-btn {
   color: #7D8BA4;
   font-family: 'Montserrat', sans-serif;
@@ -158,7 +169,31 @@ a {
 }
 
 .nav-page {
+  grid-column: span 2;
+}
+
+.nav-page-list {
+  padding-left: 0;
+}
+
+.nav-page li {
+  color: #ADB2BB;
   display: inline;
+  margin: 10px;
+}
+
+.nav-page li:hover {
+  border-bottom: solid 3px;
+  border-color: #46A3F3;
+  color: #7D8BA4;
+  padding-bottom: 12px 
+}
+
+.nav-page-summary {
+  border-bottom: solid 3px;
+  border-color: #46A3F3;
+  color: #7D8BA4;
+  padding-bottom: 12px
 }
 
 /*Charts Section*/
@@ -166,15 +201,18 @@ a {
 .data-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr) 3fr;
-  grid-template-rows: 2;
+  padding: 20px;
 }
 
 .three-c-charts {
-  width: 100%;}
+  transform: rotate(180deg);
+  width: 100%;
+}
 
 .circle-chart {
   display: block;
   margin: 10px auto;
+  margin-top: 50px;
   max-width: 80%;
   max-height: 250px;
 }
@@ -211,18 +249,35 @@ a {
 }
 
 .circle-number {
-  fill: #5B6677;
+  fill: #666;
+  font-family: 'Open-sans', sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
+  transform: rotate(180deg);
 }
 
 .circle-text {
-  font-size: em;
+  fill: #666;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 0.15em;
   text-anchor: middle;
+  transform: rotate(180deg);
 }
 
-.week-chart {
-
+.applicants-btn{
+  background-color: #FFF;
+  border: solid 2px;
+  border-color: #CDD1D6;
+  border-radius: 45px;
+  color: #717D93;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: fit-content;
 }
 
 .total-applicants-btn {
@@ -230,10 +285,47 @@ a {
 }
 
 .applicants-day-btn {
+  display: inline;
+}
 
+.totals-dot {
+  color: #ADB2BB;
+  font-size: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.hide-data-btn {
+  padding: 20px;
+}
+
+.left-break,
+.right-break {
+  display: inline-block;
+  width: 47%;
+}
+
+.up-btn {
+  background-color: #FFF;
+  border: solid 2px;
+  border-color: #CDD1D6;
+  border-radius: 45px;
+  color: #717D93;
+  display: inline-block;
+  width: fit-content;
+}
+
+.up-btn:hover {
+  background-color: #46A3F3;
+  color: #FFF;
+}
+
+.up-icon {
+  margin: 5px 10px;
 }
 
 /*Table*/ 
+
 .table-and-links-container {
   display: grid;
   font-family: 'Open Sans', sans-serif;
@@ -242,6 +334,7 @@ a {
 
 .job-description-table {
   background-color: #FFF;
+  height: 600px;
   margin: 20px;
 }
 
@@ -299,6 +392,7 @@ tr {
 /*Sharing Links Column*/
 
 .links-column {
+  height: 600px;
   margin: 20px;
 }
 
