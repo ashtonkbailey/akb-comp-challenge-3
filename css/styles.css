@@ -161,6 +161,10 @@ aside {
   text-align: center;
 }
 
+.profile-name:hover {
+  color: #FFF;
+}
+
 .nav-main,
 .nav-admin,
 .nav-categories {
@@ -171,6 +175,14 @@ aside {
 
 aside li {
   color: #A2ABBC;
+}
+
+aside li:hover {
+  background-color: #313948;
+  border-left: solid 5px;
+  border-color: #46A3F3;
+  margin-left: -15px;
+  color: #FFF;  
 }
 
 .nav-admin-job-boards {
