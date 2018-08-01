@@ -34,6 +34,7 @@ i {
 /*Table*/ 
 .table-and-links-container {
   display: grid;
+  font-family: 'Open Sans', sans-serif;
   grid-template-columns: 2fr 1fr;
 }
 
@@ -121,8 +122,17 @@ tr {
   width: 90%;
 }
 
-h2 {
+.links-column-h2 {
   color: #5B6677;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.links-column-p {
+  color: #9ca3ad;
+}
+
+.links-column-input {
+  color: #6b7584;
 }
 
 /*Search Bar*/
