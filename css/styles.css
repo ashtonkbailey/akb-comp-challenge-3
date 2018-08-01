@@ -8,6 +8,7 @@ body {
 }
 
 main {
+  background-color: #EDF2F6;
   grid-row: 2;
   grid-column: 2;
 }
@@ -102,14 +103,14 @@ tr {
 
 .facebook-post-btn {
   background-color: #4F70BC;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #FFF;
   width: 90%;
 }
 
 .twitter-post-btn {
   background-color: #46A9E9;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #FFF;
   margin: 10px 0;
   width: 90%;
@@ -117,7 +118,7 @@ tr {
 
 .linkedin-post-btn {
   background-color: #337EB7;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #FFF;
   width: 90%;
 }
@@ -125,14 +126,49 @@ tr {
 .links-column-h2 {
   color: #5B6677;
   font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+  margin-left: 0;
 }
 
 .links-column-p {
   color: #9ca3ad;
+  font-size: 0.7em;
+  margin-bottom: 2em;
+}
+
+.links-icon {
+  margin: 1.5em;
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+.input-and-btn {
+  border-bottom: solid 1px;
+  border-color: #BDC1C8;
+  padding-bottom: 1.5em;
 }
 
 .links-column-input {
+  border: none;
   color: #6b7584;
+  padding: 1em;
+  padding-right: 0;
+  margin-right: 0;
+  width: 75%;
+}
+
+.copy-btn {
+  background-color: #66B8BF;
+  border: none;
+  border-radius: 0 0 2px;
+  color: #FFF;
+  margin-left: -5px;
+  padding: 1em;
+}
+
+.hiring-email {
+  width: 95%;
 }
 
 /*Search Bar*/
@@ -146,11 +182,16 @@ tr {
 /*Title and Nav of Viewed Page*/
 
 .title-and-nav-container {
+  background-color: #FFF;
   display: grid;
 }
 
 .title-container {
 
+}
+
+.nav-page {
+  display: inline;
 }
 
 /*Charts Section*/
