@@ -2,6 +2,7 @@
 
 body {
   display: grid;
+  font-family: 'Open Sans', sans-serif;
   grid-template-columns: 20% 80%;
   margin: 0;
 }
@@ -15,11 +16,18 @@ header {
   grid-column: 2;
 }
 
-aside {
-  background-color: #374050;
-  color: #A2ABBC;
-  grid-column: 1;
-  grid-row: 1 / 3;
+ul {
+/*  border-top: solid;
+  border-color: #2C3442;*/
+  font-family: 'Montserrat', sans-serif;
+  font-size: .5em;
+  padding: 15px;
+}
+
+li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 /*Table and Sharing Links*/
@@ -130,10 +138,36 @@ aside {
 
 /*Sidebar Nav*/
 
+aside {
+  background-color: #374050;
+  color: #A2ABBC;
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
 .user-img {
   border-radius: 45px;
   display: block;
-  margin: 2rem auto;
+  margin: 2em auto;
+  margin-bottom: 0;
   width: 6em;
 }
 
+.profile-name {
+  font-size: 10px;
+  padding: 15px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.nav-main,
+.nav-admin,
+.nav-categories {
+  border-top: solid;
+  border-color: #2C3442;
+  color: #66738A;
+}
+
+aside li {
+  color: #A2ABBC;
+}
