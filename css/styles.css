@@ -17,8 +17,6 @@ header {
 }
 
 ul {
-/*  border-top: solid;
-  border-color: #2C3442;*/
   font-family: 'Montserrat', sans-serif;
   font-size: .5em;
   padding: 15px;
@@ -26,8 +24,11 @@ ul {
 
 li {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
   font-weight: 700;
+}
+
+i {
+  margin: 10px;
 }
 
 /*Table and Sharing Links*/
@@ -171,3 +172,35 @@ aside {
 aside li {
   color: #A2ABBC;
 }
+
+.nav-admin-job-boards {
+  background-color: #313948;
+  border-left: solid 5px;
+  border-color: #46A3F3;
+  margin-left: -15px;
+  color: #FFF;
+}
+
+.nav-categories li {
+  font-size: 7px;
+}
+
+.yellow-icon {
+  color: #FAD549;
+}
+
+.blue-icon {
+  color: #52AEF8;
+}
+
+.red-icon {
+  color: #D63662;
+}
+
+.green-icon {
+  color: #4AA68B;
+}
+
+
+
+
