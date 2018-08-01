@@ -32,6 +32,207 @@ i {
   margin: 10px;
 }
 
+/*Search Bar*/
+
+.search-and-btns-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
+  height: 4em;
+  border-bottom: solid 2px;
+  border-color: #EEE;
+}
+
+.hide-menu-btn {
+  display: grid;
+  align-items: center;
+  background-color: #FFF;
+  justify-content: center;
+}
+
+.left-arrow {
+  color: #27AFFB;
+  font-size: 1em;
+}
+
+.justify-icon {
+  color: #717D93;
+  margin-left: 0;
+}
+
+.search-container {
+  padding: 14px;
+}
+
+.search-container,
+.calendar-plus-btn {
+  border-left: solid 2px;
+  border-right: solid 2px;
+  border-color: #EEE;
+}
+
+.fa-search {
+  color: #BDC1C8;
+}
+
+.search-input {
+  border: none;
+  color: #EEE;
+  font-size: 1em;
+  width: 80%;
+}
+
+.search-btns {
+  background-color: #FFF;
+  color: #717D93;
+  padding: .8em 1em;
+}
+
+.hide-menu-btn:hover,
+.search-btns:hover {
+  background-color: #46A3F3;
+  color: #FFF;
+}
+
+.left-arrow:hover,
+.justify-icon:hover {
+  color: #FFF;
+}
+
+/*Title and Nav of Viewed Page*/
+
+.title-and-nav-container {
+  background-color: #FFF;
+  display: grid;
+  grid-template-columns: 7fr repeat(4, 1fr);
+  padding: 30px;
+}
+
+.title-container {
+
+}
+
+h1 {
+  color: #717D93;
+}
+
+.loc-name {
+  color: #7D8BA4;
+  margin-right: 0;
+}
+
+.location-dot-separator {
+  color: #7D8BA4;
+  font-size: 5px;
+}
+
+a {
+  color: #46A3F3;
+}
+
+.file-edits{
+  border: solid 2px;
+  border-color: #CDD1D6;
+  border-radius: 45px;
+  font-size: 0.8em;
+  margin: 0 auto;
+  padding: 15px 5px 0px 20px;
+  width: 30px;
+}
+
+.open-file-btn {
+  color: #7D8BA4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 15px;
+  width: 75px;
+}
+
+.open-dot {
+  color: #99C354;
+  margin: 0;
+}
+
+.file-edits-icon {
+  color: #7D8BA4;
+  margin: 0;
+}
+
+.nav-page {
+  display: inline;
+}
+
+/*Charts Section*/
+
+.data-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 3fr;
+  grid-template-rows: 2;
+}
+
+.three-c-charts {
+  width: 100%;}
+
+.circle-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 3px;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.blue {
+  stroke: #46A3F3;
+}
+
+.green {
+  stroke: #66B8BF;
+}
+
+.purple {
+  stroke: #A46EAB;
+}
+
+.circle-number {
+  fill: #5B6677;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.circle-text {
+  font-size: em;
+  text-anchor: middle;
+}
+
+.week-chart {
+
+}
+
+.total-applicants-btn {
+  grid-column: span 3;
+}
+
+.applicants-day-btn {
+
+}
+
 /*Table*/ 
 .table-and-links-container {
   display: grid;
@@ -169,148 +370,6 @@ tr {
 
 .hiring-email {
   width: 95%;
-}
-
-/*Search Bar*/
-
-.search-and-btns-container {
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
-  height: 4em;
-  border-bottom: solid 2px;
-  border-color: #EEE;
-}
-
-.hide-menu-btn {
-  display: grid;
-  align-items: center;
-  background-color: #FFF;
-  justify-content: center;
-}
-
-.left-arrow {
-  color: #27AFFB;
-  font-size: 1em;
-}
-
-.justify-icon {
-  color: #717D93;
-  margin-left: 0;
-}
-
-.search-container {
-  padding: 14px;
-}
-
-.search-container,
-.calendar-plus-btn {
-  border-left: solid 2px;
-  border-right: solid 2px;
-  border-color: #EEE;
-}
-
-.fa-search {
-  color: #BDC1C8;
-}
-
-.search-input {
-  border: none;
-  color: #EEE;
-  font-size: 1em;
-  width: 80%;
-}
-
-.search-btns {
-  background-color: #FFF;
-  color: #717D93;
-  padding: .8em 1em;
-}
-
-/*Title and Nav of Viewed Page*/
-
-.title-and-nav-container {
-  background-color: #FFF;
-  display: grid;
-}
-
-.title-container {
-
-}
-
-.nav-page {
-  display: inline;
-}
-
-/*Charts Section*/
-
-.data-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr) 3fr;
-  grid-template-rows: 2;
-}
-
-.three-c-charts {
-  width: 100%;}
-
-.circle-chart {
-  display: block;
-  margin: 10px auto;
-  max-width: 80%;
-  max-height: 250px;
-}
-
-.circle-bg {
-  fill: none;
-  stroke: #EEE;
-  stroke-width: 3px;
-}
-
-.circle {
-  fill: none;
-  stroke-width: 2px;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
-.blue {
-  stroke: #46A3F3;
-}
-
-.green {
-  stroke: #66B8BF;
-}
-
-.purple {
-  stroke: #A46EAB;
-}
-
-.circle-number {
-  fill: #5B6677;
-  font-size: 0.5em;
-  text-anchor: middle;
-}
-
-.circle-text {
-  font-size: em;
-  text-anchor: middle;
-}
-
-.week-chart {
-
-}
-
-.total-applicants-btn {
-  grid-column: span 3;
-}
-
-.applicants-day-btn {
-
 }
 
 /*Sidebar Nav*/
