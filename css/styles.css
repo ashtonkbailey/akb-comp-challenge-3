@@ -31,23 +31,75 @@ i {
   margin: 10px;
 }
 
-/*Table and Sharing Links*/
-
+/*Table*/ 
 .table-and-links-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
 .job-description-table {
-  border: solid;
+  background-color: #FFF;
   margin: 20px;
 }
+
+th {
+  background-color: #717D93;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.th-btn {
+  text-align: left;
+}
+
+th, td {
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+tr {
+  border-bottom: solid;
+  border-color: #EEE;
+}
+
+.edit-table-btn {
+  background-color: #7D8BA4;
+  border: none;
+  color: #FFF;
+}
+
+.column-one {
+  color: #717D93;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.column-two {
+  color: #717D93;
+}
+
+.tom-img {
+  border-radius: 45px;
+  margin-right: 10px;
+  width: 2em;
+}
+
+.salary {
+  color: #717D93;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/*Sharing Links Column*/
 
 .links-column {
   margin: 20px;
 }
 
-/*Search bar*/
+/*Search Bar*/
 
 .search-and-btns-container {
   display: grid;
