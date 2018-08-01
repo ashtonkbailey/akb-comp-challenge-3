@@ -103,24 +103,24 @@ tr {
 
 .facebook-post-btn {
   background-color: #4F70BC;
-  border-radius: 2px;
+  border-radius: 5px;
   color: #FFF;
-  width: 90%;
+  width: 100%;
 }
 
 .twitter-post-btn {
   background-color: #46A9E9;
-  border-radius: 2px;
+  border-radius: 5px;
   color: #FFF;
   margin: 10px 0;
-  width: 90%;
+  width: 100%;
 }
 
 .linkedin-post-btn {
   background-color: #337EB7;
-  border-radius: 2px;
+  border-radius: 5px;
   color: #FFF;
-  width: 90%;
+  width: 100%;
 }
 
 .links-column-h2 {
@@ -177,6 +177,53 @@ tr {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
   height: 4em;
+  border-bottom: solid 2px;
+  border-color: #EEE;
+}
+
+.hide-menu-btn {
+  display: grid;
+  align-items: center;
+  background-color: #FFF;
+  justify-content: center;
+}
+
+.left-arrow {
+  color: #27AFFB;
+  font-size: 1em;
+}
+
+.justify-icon {
+  color: #717D93;
+  margin-left: 0;
+}
+
+.search-container {
+  padding: 14px;
+}
+
+.search-container,
+.calendar-plus-btn {
+  border-left: solid 2px;
+  border-right: solid 2px;
+  border-color: #EEE;
+}
+
+.fa-search {
+  color: #BDC1C8;
+}
+
+.search-input {
+  border: none;
+  color: #EEE;
+  font-size: 1em;
+  width: 80%;
+}
+
+.search-btns {
+  background-color: #FFF;
+  color: #717D93;
+  padding: .8em 1em;
 }
 
 /*Title and Nav of Viewed Page*/
