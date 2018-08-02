@@ -103,7 +103,7 @@ i {
 .title-and-nav-container {
   background-color: #FFF;
   display: grid;
-  grid-template-columns: 7fr repeat(4, 1fr);
+  grid-template-columns: 8fr 1fr;
   padding: 30px 30px 0 30px;
 }
 
@@ -139,10 +139,11 @@ a {
   border: solid 2px;
   border-color: #CDD1D6;
   border-radius: 45px;
-  font-size: 0.8em;
-  margin: 0 auto;
-  padding: 15px 5px 0px 20px;
-  width: 30px;
+  font-size: 0.7em;
+  height: fit-content;
+  margin: 0 0 0 10px;
+  padding: 7px 10px;
+  width: fit-content;
 }
 
 .file-edits:hover {
@@ -154,12 +155,11 @@ a {
   color: #7D8BA4;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  padding: 15px;
-  width: 75px;
 }
 
 .open-dot {
   color: #99C354;
+  float: left;
   margin: 0;
 }
 
