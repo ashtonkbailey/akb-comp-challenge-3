@@ -641,7 +641,9 @@ aside li:hover {
   }
 
   .user-img {
-    width: 2em;
+    margin: 1em auto;
+    margin-bottom: 0;
+    width: 3em;
   }
 
   .profile-name {
@@ -675,6 +677,10 @@ aside li:hover {
 
 @media screen and (max-width: 850px) {
 
+  .title-and-nav-container {
+    grid-template-columns: 7fr 1fr;
+  }
+
   .job-description-table {
     height: 600px;
   }
@@ -693,9 +699,53 @@ aside li:hover {
 
 }
 
+@media screen and (max-width: 768px) {
+
+  .hiring-email {
+    width: 70%;
+  }
+
+  .break {
+    padding-left: 35px;
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width: 710px) {
+
+  .table-and-links-container {
+    height: 100%;
+  }
+
+  .job-description-table {
+    height: 700px;
+  }
+
+  .links-column-input {
+    width: 90%;
+  }
+
+  .copy-btn {
+    border-radius: 2px;
+    margin: 0;
+    margin-top: 5px;
+    width: 97%;
+  }
+
+}
+
 @media screen and (max-width: 690px) {
 
+  .title-and-nav-container {
+    grid-template-columns: 5fr 1fr;
+  }
+
   .data-images {
+    display: none;
+  }
+
+  .up-btn-container {
     display: none;
   }
 
@@ -705,14 +755,44 @@ aside li:hover {
     border-color: #CDD1D6;
     border-radius: 45px;
     color: #717D93;
+    display: inline;
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+
+  .hide-data-btn {
+    margin: 0 30px;
+  }
+
+  .break {
+    padding-left: 50px;
+    width: 35%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .title-and-nav-container {
+    padding: 20px 20px 0 20px;
+  }
+
+  .table-and-links-container {
     display: block;
-    margin: auto;
-    transform: rotate(180deg);
-    width: fit-content;
+  }
+
+  .social-btn {
+    padding: 15px;
   }
 
   .links-column-input {
-    width: 65%;
+    width: 98%;
+  }
+
+  .copy-btn {
+    width: 100%;
   }
 
 }
