@@ -200,27 +200,28 @@ a {
 
 .data-images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) 3fr;
+  grid-gap: 10px;
+  grid-template-columns: 55% 45%;
   padding: 20px;
 }
 
 .three-c-charts {
+  align-content: center;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.circle-chart {
   transform: rotate(180deg);
   width: 100%;
 }
 
-.circle-chart {
-  display: block;
-  margin: 10px auto;
-  margin-top: 50px;
-  max-width: 80%;
-  max-height: 250px;
-}
-
 .circle-bg {
   fill: none;
-  stroke: #EEE;
-  stroke-width: 3px;
+  stroke: #DAE3EA;
+  stroke-width: 2px;
 }
 
 .circle {
@@ -248,20 +249,21 @@ a {
   stroke: #A46EAB;
 }
 
-.circle-number {
-  fill: #666;
-  font-family: 'Open-sans', sans-serif;
-  font-size: 0.5em;
-  text-anchor: middle;
-  transform: rotate(180deg);
-}
-
 .circle-text {
+  stroke: none;
   fill: #666;
   font-family: 'Open-sans', sans-serif;
   font-size: 0.15em;
   text-anchor: middle;
   transform: rotate(180deg);
+}
+
+.number {
+  font-size: 0.5em;
+}
+
+.week-chart {
+  width: 100%;
 }
 
 .applicants-btn{
@@ -281,7 +283,7 @@ a {
 }
 
 .total-applicants-btn {
-  grid-column: span 3;
+  /*grid-column: span 3;*/
 }
 
 .applicants-day-btn {
