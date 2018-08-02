@@ -3,7 +3,7 @@
 body {
   display: grid;
   font-family: 'Open Sans', sans-serif;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
   margin: 0;
 }
 
@@ -485,13 +485,12 @@ aside {
   display: block;
   margin: 2em auto;
   margin-bottom: 0;
-  width: 6em;
+  width: 4em;
 }
 
 .profile-name {
   font-size: 10px;
-  padding: 15px;
-  margin-bottom: 1em;
+  padding: 10px;
   text-align: center;
 }
 
@@ -499,12 +498,25 @@ aside {
   color: #FFF;
 }
 
+.profile-drop {
+  margin: 5px;
+}
+
 .nav-main,
 .nav-admin,
 .nav-categories {
+  color: #66738A;
+  margin-bottom: 5px;
+  pointer-events: none;
+}
+
+li i {
+  margin-left: 0;
+}
+
+aside ul {
   border-top: solid;
   border-color: #2C3442;
-  color: #66738A;
 }
 
 aside li {
@@ -513,17 +525,19 @@ aside li {
 
 aside li:hover {
   background-color: #313948;
-  border-left: solid 5px;
+  border-left: solid 3px;
   border-color: #46A3F3;
-  margin-left: -15px;
+  margin: 0 -15px;
+  padding-left: 10px;
   color: #FFF;  
 }
 
 .nav-admin-job-boards {
   background-color: #313948;
-  border-left: solid 5px;
+  border-left: solid 3px;
   border-color: #46A3F3;
-  margin-left: -15px;
+  margin: 0 -15px;
+  padding-left: 10px;
   color: #FFF;
 }
 
