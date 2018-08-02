@@ -343,6 +343,7 @@ a {
   display: grid;
   font-family: 'Open Sans', sans-serif;
   grid-template-columns: 2fr 1fr;
+  height: 100vh;
 }
 
 .job-description-table {
@@ -363,37 +364,60 @@ th {
   text-align: left;
 }
 
-th, td {
-  font-size: 0.8em;
-  padding: 10px;
-}
-
-tr {
-  border-bottom: solid;
-  border-color: #EEE;
-}
-
 .edit-table-btn {
   background-color: #7D8BA4;
   border: none;
   color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.table-edit-icon {
+  margin: 0;
+}
+
+th, td {
+  font-size: 0.8em;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+tr {
+  border-bottom: solid 2px;
+  border-color: #EEE;
+}
+
+td {
+  color: #717D93;
+}
+
+.row-1 {
+  width: 30%;
+}
+
+.row-2 {
+  width: 70%;
 }
 
 .column-one {
-  color: #717D93;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding-right: 20px;
 }
 
-.column-two {
-  color: #717D93;
+.description {
+  vertical-align: top;
+  padding-top: 25px;
 }
 
 .tom-img {
   border-radius: 45px;
   margin-right: 10px;
   width: 2em;
+  vertical-align: inherit;
 }
 
 .salary {
