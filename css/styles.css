@@ -343,6 +343,7 @@ a {
   display: grid;
   font-family: 'Open Sans', sans-serif;
   grid-template-columns: 2fr 1fr;
+  height: 100vh;
 }
 
 .job-description-table {
@@ -373,6 +374,18 @@ tr {
   border-color: #EEE;
 }
 
+td {
+  color: #717D93;
+}
+
+.row-1 {
+  width: 30%;
+}
+
+.row-2 {
+  width: 70%;
+}
+
 .edit-table-btn {
   background-color: #7D8BA4;
   border: none;
@@ -380,14 +393,9 @@ tr {
 }
 
 .column-one {
-  color: #717D93;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding-right: 20px;
-}
-
-.column-two {
-  color: #717D93;
 }
 
 .tom-img {
