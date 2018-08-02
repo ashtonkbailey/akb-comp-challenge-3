@@ -165,16 +165,24 @@ aside {
 }
 
 .profile-drop {
-  font-size: 1em;
   margin: 5px;
 }
 
 .nav-main,
 .nav-admin,
 .nav-categories {
+  color: #66738A;
+  margin-bottom: 5px;
+  pointer-events: none;
+}
+
+li i {
+  margin-left: 0;
+}
+
+aside ul {
   border-top: solid;
   border-color: #2C3442;
-  color: #66738A;
 }
 
 aside li {
@@ -183,17 +191,19 @@ aside li {
 
 aside li:hover {
   background-color: #313948;
-  border-left: solid 5px;
+  border-left: solid 3px;
   border-color: #46A3F3;
-  margin-left: -15px;
+  margin: 0 -15px;
+  padding-left: 10px;
   color: #FFF;  
 }
 
 .nav-admin-job-boards {
   background-color: #313948;
-  border-left: solid 5px;
+  border-left: solid 3px;
   border-color: #46A3F3;
-  margin-left: -15px;
+  margin: 0 -15px;
+  padding-left: 10px;
   color: #FFF;
 }
 
