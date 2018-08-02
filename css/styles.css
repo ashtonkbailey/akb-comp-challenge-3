@@ -113,7 +113,7 @@ i {
 
 h1 {
   color: #717D93;
-  font-weight: 700;
+  font-size: 1.5em;
 }
 
 .loc-p {
@@ -123,16 +123,17 @@ h1 {
 
 .loc-name {
   color: #ADB2BB;
-  margin-right: 0;
+  margin: 10px 0;
 }
 
 .location-dot-separator {
-  color: #7D8BA4;
+  color: #ADB2BB;
   font-size: 5px;
 }
 
 a {
   color: #46A3F3;
+  text-decoration: none;
 }
 
 .file-edits{
@@ -166,6 +167,11 @@ a {
 .file-edits-icon {
   color: #7D8BA4;
   margin: 0;
+}
+
+.file-edits-icon:hover {
+  background-color: #46A3F3;
+  color: #FFF;
 }
 
 .nav-page {
