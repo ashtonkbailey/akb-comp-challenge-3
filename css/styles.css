@@ -364,13 +364,29 @@ th {
   text-align: left;
 }
 
-th, td {
-  font-size: 0.8em;
+.edit-table-btn {
+  background-color: #7D8BA4;
+  border: none;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9em;
+  font-weight: 700;
   padding: 10px;
 }
 
+.table-edit-icon {
+  margin: 0;
+}
+
+th, td {
+  font-size: 0.8em;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
 tr {
-  border-bottom: solid;
+  border-bottom: solid 2px;
   border-color: #EEE;
 }
 
@@ -386,22 +402,22 @@ td {
   width: 70%;
 }
 
-.edit-table-btn {
-  background-color: #7D8BA4;
-  border: none;
-  color: #FFF;
-}
-
 .column-one {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding-right: 20px;
 }
 
+.description {
+  vertical-align: top;
+  padding-top: 25px;
+}
+
 .tom-img {
   border-radius: 45px;
   margin-right: 10px;
   width: 2em;
+  vertical-align: inherit;
 }
 
 .salary {
