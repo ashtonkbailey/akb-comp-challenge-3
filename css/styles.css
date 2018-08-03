@@ -107,10 +107,6 @@ i {
   padding: 30px 30px 0 30px;
 }
 
-.title-container {
-
-}
-
 h1 {
   color: #717D93;
   font-size: 1.5em;
@@ -175,6 +171,10 @@ a {
   color: #FFF;
 }
 
+.nav-page-icon {
+  display: none;
+}
+
 .nav-page {
   grid-column: span 5;
 }
@@ -183,13 +183,13 @@ a {
   padding-left: 0;
 }
 
-.nav-page li {
+.hide-nav {
   color: #ADB2BB;
   display: inline;
   margin: 10px;
 }
 
-.nav-page li:hover {
+.hide-nav:hover {
   border-bottom: solid 3px;
   border-color: #46A3F3;
   color: #7D8BA4;
@@ -200,6 +200,8 @@ a {
   border-bottom: solid 3px;
   border-color: #46A3F3;
   color: #7D8BA4;
+  display: inline;
+  margin: 10px;
   padding-bottom: 12px
 }
 
@@ -656,11 +658,11 @@ aside li:hover {
   }
 
   .hide-menu-btn {
-    display: none;
+    transform: rotate(180deg);
   }
 
   .search-and-btns-container {
-    grid-template-columns: 8fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
     height: 98%;
   }
 
@@ -701,6 +703,19 @@ aside li:hover {
 
 @media screen and (max-width: 768px) {
 
+  .search-and-btns-container {
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    height: 80%;
+  }
+
+  .search-container {
+    padding: 22px 0;
+  }
+
+  .search-btns {
+    padding-top: 22px;
+  }
+
   .hiring-email {
     width: 70%;
   }
@@ -710,9 +725,17 @@ aside li:hover {
     width: 40%;
   }
 
+  aside {
+    height: 82px;
+  }
+
 }
 
 @media screen and (max-width: 710px) {
+
+  .search-container {
+    font-size: 0.9em;
+  }
 
   .table-and-links-container {
     height: 100%;
@@ -761,22 +784,83 @@ aside li:hover {
 }
 
 @media screen and (max-width: 660px) {
+  
+  body {
+    grid-template-columns: auto;
+  }
+
+  header {
+    height: 100%;
+  }
+
+  .search-and-btns-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+  }
+
+  .hide-menu-btn {
+    border-left: solid 2px #EEE;
+    grid-row: 1;
+  }
+
+  .search-container {
+    border: solid 2px #EEE;
+    font-size: 1em;
+    grid-column: span 4;
+  }
+
+  .search-btns{
+    display: grid;
+    grid-row: 1;
+    justify-content: center;
+  }
 
   .hide-data-btn {
     margin: 0 30px;
   }
 
+  .title-and-nav-container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px 20px 0 20px;
+  }
+
+  .title-container {
+    display: grid;
+    grid-column: span 5;
+    justify-content: center;
+  }
+
+  .loc-p {
+    text-align: center;
+  }
+
+  .file-edits {
+    font-size: 1em;
+    grid-row: 2;
+    height: 70px;
+    margin: auto;
+    width: 70px;
+  }
+
+  .nav-page-icon {
+    display: block;
+  }
+
+  .nav-page {
+    font-size: 2em;
+    margin: auto;
+    padding-top: 21px;
+  }
+
+  .hide-nav {
+    display: none;
+  }
+
   .break {
     padding-left: 50px;
     width: 35%;
-  }
-
-}
-
-@media screen and (max-width: 650px) {
-
-  .title-and-nav-container {
-    padding: 20px 20px 0 20px;
   }
 
   .table-and-links-container {
@@ -794,5 +878,25 @@ aside li:hover {
   .copy-btn {
     width: 100%;
   }
+
+  aside {
+    height: 100%;
+  }
+
+    .user-img {
+    margin: 1em auto;
+    width: 6em;
+  }
+
+  .profile-name {
+    font-size: 1em; 
+  }
+}
+
+@media screen and (max-width: 590px) {
+
+
+
+
 
 }
